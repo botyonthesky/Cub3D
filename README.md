@@ -20,14 +20,6 @@ To compile the mandatory part, `cd` into the cloned directory and:
 make
 ```
 
-To compile the bonus part, `cd` into the cloned directory and:
-
-```shell
-make bonus
-```
-Note: you may need to `make fclean` to switch between the mandatory and bonus compilations (working on a fix for this!).
-
-
 To run the program:
 
 ```shell
