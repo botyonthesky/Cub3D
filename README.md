@@ -43,7 +43,7 @@ Controls for movement and rotation are:
 - `E`: open doors
 - `F`: fire
 - `C`: change weapons
-- `1`,`2`,`3`,`4`,`5`: select wespons
+- `1`,`2`,`3`,`4`,`5`: select weapons
 - `P`: pause
 - `ECHAP` : quit
 
