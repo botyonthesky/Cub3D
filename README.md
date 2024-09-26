@@ -39,7 +39,7 @@ Controls for movement and rotation are:
 - `D`: strafe right
 - `left arrow`: rotate left
 - `right arrow`: rotate right
-- `mouse`: rotate by moving the mouse (bonus only)
+- `mouse`: rotate by moving the mouse
 - `E`: open doors
 - `F`: fire
 - `C`: change weapons
