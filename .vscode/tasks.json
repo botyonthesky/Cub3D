@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "cub3d",
+			"command": "make re -j DEBUG=1",
+			"type": "shell",
+		}
+	]
+}
