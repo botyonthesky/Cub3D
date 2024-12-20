@@ -7,7 +7,7 @@ CC			:= cc
 CFLAGS		:= -Wall -Werror -Wextra
 CFLAGS		+= -I./include
 CPPFLAGS	+= -MMD -MP -MF $(@:.o=.d)
-MLXFLAGS	:= -lX11 -lXext -lm -lz -L.
+MLXFLAGS	:= -lX11 -lXext -lm -L.
 
 # Directories
 SRC_DIR 		:= ./src
@@ -231,7 +231,7 @@ $(BONUS):	$(LIBFT) $(MINILIBX) $(OBJB)
 
 $(LIBFT):	
 	@echo "$(YELLOW) Building libft $(CFLAGS) ...$(END)"	
-	@$(MAKE) DEBUG=$(DEBUG) -C $(LIBFT_DIR) >/dev/null 2>&1
+	@$(MAKE) DEBUG=$(DEBUG) -C $(LIBFT_DIR)
 	@echo "$(GREEN) libft built successfully.$(END)"
 
 $(MINILIBX):
@@ -240,10 +240,10 @@ $(MINILIBX):
 	@echo "$(GREEN) minilibx built successfully.$(END)"
 
 # Rule to build the libft
-# libft:
-# 	@echo "$(YELLOW) Building libft $(CFLAGS) ...$(END)"
-# 	@$(MAKE) DEBUG=$(DEBUG) -C ./libft >/dev/null 2>&1
-# 	@echo "$(GREEN) libft built successfully.$(END)"
+#libft:
+#@echo "$(YELLOW) Building libft $(CFLAGS) ...$(END)"
+#@$(MAKE) DEBUG=$(DEBUG) -C ./libft >/dev/null 2>&1
+#	@echo "$(GREEN) libft built successfully.$(END)"
 
 # Rule to build the libft for release
 libft_release:

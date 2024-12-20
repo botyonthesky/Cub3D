@@ -16,12 +16,8 @@ void	init_boss(t_game *game)
 void	boss_info(t_game *game)
 {
 	int	i;
-	int	x;
-	int	y;
 
 	i = 0;
-	x = 0;
-	y = 0;
 	while (i < game->map.size)
 	{
 		if (game->map.grid[i] == 9)
@@ -38,11 +34,9 @@ void	boss_info(t_game *game)
 
 void	check_for_boss(t_game *game)
 {
-	int	i;
 	int	x;
 	int	y;
 
-	i = 0;
 	x = game->player.x;
 	y = game->player.y;
 	if (x >= game->boss.x - 100 && x <= game->boss.x + 100)
